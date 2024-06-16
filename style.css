@@ -5,14 +5,15 @@ section {
 
 section::before {
     z-index: -1;
-    content: '';
+    content: ''; 
+    /* dibiarkan kosong nanti dikasih konten di setiap class dari sectionnya masing masing */
     font-size: 72px;
-    color: gray;
-    opacity: 0.25;
+    color: black;
+    opacity: 0.35;
     position: absolute;
     font-weight: 700;
-    top: 20px;
-    left: -30px;
+    top: 30px;
+    left: -40px;
 }
 
 .btn.button {
@@ -48,7 +49,7 @@ section::before {
 }
 
 .about::before {
-    content: 'About';
+    content: 'AbouT';
 }
 
 .about-exp-item {
@@ -69,7 +70,7 @@ section::before {
     50% { 
         transform: translateY(10px);
     }
-    
+
     100% {
         transform: translateY(0);
     }

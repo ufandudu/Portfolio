@@ -1,5 +1,6 @@
 section {
     padding-top: 128px;
+    /* padding-bottom: 128px; */
     position: relative;
 }
 
@@ -8,8 +9,8 @@ section::before {
     content: ''; 
     /* dibiarkan kosong nanti dikasih konten di setiap class dari sectionnya masing masing */
     font-size: 72px;
-    color: black;
-    opacity: 0.35;
+    color: rgba(37,45,49,255);
+    opacity: 0.65;
     position: absolute;
     font-weight: 700;
     top: 30px;
@@ -81,9 +82,34 @@ section::before {
     width: 100%;
 }
 
+.work-img-item {
+    position: relative;
+}
+
+.work-img-item:hover::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+
 #work-1 {grid-area: work-1;}
+#work-1:hover::after {content: 'Web Project';}
+
 #work-2 {grid-area: work-2;}
+#work-2:hover::after {content: 'Software Project';}
+
 #work-3 {grid-area: work-3;}
+#work-3:hover::after {content: 'Real Project';}
 
 @keyframes upDown {
     0% {

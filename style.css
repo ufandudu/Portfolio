@@ -150,7 +150,12 @@ section::before {
 @media only screen and (max-width: 768px) {
     .home img {
         width: 50%;
-    }    
+    }   
+
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    } 
 }
 
 @media only screen and (max-width: 576px) {
